@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EscolaMaster.master.cs" Inherits="EscolaWebForms.Web.EscolaMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="Content\bootstrap.css" />
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+    </head>
+    <body class="bg-dark">
+        <form id="form1" runat="server">
+        
+    
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#" style="margin-left:10px">ESCOLA WEBFORMS</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Alunos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Disciplinas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notas</a>
+              </li>      
+            </ul>
+          </div>
+        </nav>
+
+        <div class="container bg-white" style="min-height: 550px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div> 
+        
+        <footer class="bg-dark">
+          <p style="color:white; margin-left:10px; min-height: 100%">Projeto de estudo WebForms - ORH</p>
+        </footer>
+    </form>
+    </body>
+</html>
