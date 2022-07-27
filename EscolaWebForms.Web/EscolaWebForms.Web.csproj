@@ -89,6 +89,7 @@
     <Content Include="CSS\IndexCSS.css" />
     <Content Include="Index.aspx" />
     <Content Include="ListaAlunos.aspx" />
+    <Content Include="Comum\comumJs.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -149,6 +150,7 @@
     <Compile Include="ListaAlunos.aspx.designer.cs">
       <DependentUpon>ListaAlunos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Comum\comumClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

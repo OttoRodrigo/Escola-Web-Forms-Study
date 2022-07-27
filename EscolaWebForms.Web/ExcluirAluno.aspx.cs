@@ -11,9 +11,25 @@ namespace EscolaWebForms.Web
 {
     public partial class ExcluirAluno : System.Web.UI.Page
     {
+        private svcAluno _insAluno = new svcAluno();
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                var id = Context.Items["id"].ToString();
+                buscaAluno(Convert.ToInt64(id));
+            }
+        }
 
+        protected void buscaAluno(long cpf)
+        {
+            var editAluno = _insAluno.buscaAluno(cpf);
+            tbCpf.Text = editAluno.cpf.ToString();
+            tbNome.Text = editAluno.nome;
+            tbCep.Text = editAluno.cep.ToString();
+            tbNum.Text = editAluno.numero.ToString();
+            tbComp.Text = editAluno.complemento;
         }
 
         protected void btnExcluir_OnClick(Object sender, EventArgs e)
@@ -21,14 +37,13 @@ namespace EscolaWebForms.Web
             aluno addAluno = new aluno();
             svcAluno insAluno = new svcAluno();
 
-            addAluno.cpf = Convert.ToInt32(tbCpf.Text);
-            addAluno.nome = tbNome.Text;
-            addAluno.cep = Convert.ToInt32(tbCep.Text);
-            addAluno.numero = Convert.ToInt32(tbNum.Text);
-            addAluno.complemento = tbComp.Text;
-
-            //insAluno.addAluno(addAluno);
+            insAluno.excluirAluno(Convert.ToInt64(tbCpf.Text));
+            Server.Transfer("~/ListaAlunos.aspx");
         }
 
+        protected void btnVoltar_OnClick(Object sender, EventArgs e)
+        {
+            Server.Transfer("~/ListaAlunos.aspx");
+        }
     }
 }

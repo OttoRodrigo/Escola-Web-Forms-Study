@@ -1,0 +1,14 @@
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\bin\Debug\EscolaWebForms.dll
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\bin\Debug\EscolaWebForms.pdb
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.csproj.AssemblyReference.cache
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.csproj.CoreCompileInputs.cache
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.dll
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.pdb
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\bin\Debug\EscolaWebForms.dll.config
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\bin\Debug\EntityFramework.dll
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\bin\Debug\EntityFramework.xml
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.csproj.CopyComplete
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.Data.RESAluno.resources
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.csproj.GenerateResource.cache

@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-2">
             <label>CPF</label>
-            <asp:TextBox class="form-control" ID="tbCpf" runat="server" type="number"></asp:TextBox>
+            <asp:TextBox class="form-control" ID="tbCpf" runat="server" type="number" Enabled="false" Width="90%"></asp:TextBox>
         </div>
         <div class="col-10">
             <label>Nome</label>
@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-2">
             <label>CEP</label>
-            <asp:TextBox class="form-control" ID="tbCep" runat="server" type="number"></asp:TextBox>
+            <asp:TextBox class="form-control valid-js-cep" ID="tbCep" runat="server" type="number"></asp:TextBox>
         </div>
         <div class="col-2">
             <label>Número</label>
@@ -34,4 +34,11 @@
             <asp:Button ID="btnEditar" class="btn btn-success" runat="server" Text="Salvar" Width="100%" OnClick="btnEditar_OnClick" />
         </div>
     </div>
+    <div class="row">
+        <div class="col-1">        
+            <asp:Button ID="btnVoltar" class="btn btn-link" runat="server" Text="Voltar" OnClick="btnVoltar_OnClick" />
+        </div>
+    </div>
+
+    <script type="text/javascript" src="Comum/comumJs.js"></script>
 </asp:Content>

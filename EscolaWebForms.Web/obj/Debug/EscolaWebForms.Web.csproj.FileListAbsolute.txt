@@ -36,3 +36,4 @@ C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms.Web\obj\Debug\EscolaWe
 C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms.Web\obj\Debug\EscolaWebForms.Web.pdb
 C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms.Web\bin\EscolaWebForms.dll
 C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms.Web\bin\EscolaWebForms.pdb
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms.Web\bin\EscolaWebForms.dll.config

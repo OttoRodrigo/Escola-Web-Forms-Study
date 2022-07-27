@@ -5,7 +5,7 @@
     <br />
     <div class="row">
         <div class="col-12">
-            <asp:GridView ID="gvAlunos" runat="server" OnPageIndexChanging="gvAlunos_OnPageIndexChanged" onrowediting="edit_RowEditing" Width="100%" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+            <asp:GridView ID="gvAlunos" runat="server" OnPageIndexChanging="gvAlunos_OnPageIndexChanged" onrowediting="edit_RowEditing" OnRowDeleting="delete_RowDeleting" Width="100%" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
                 <AlternatingRowStyle BackColor="#CCCCCC" />
                 <FooterStyle BackColor="#CCCCCC" />
                 <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
@@ -22,8 +22,7 @@
     <div class="row">
         <div class="col-2">
             <br />
-            <button type="button" class="btn btn-secondary">Novo Aluno</button>
-
+            <asp:Button ID="btnNovoAluno" runat="server" Text="Novo Aluno" class="btn btn-primary" OnClick="btnNovoAluno_onclick" />
         </div>
     </div>
 

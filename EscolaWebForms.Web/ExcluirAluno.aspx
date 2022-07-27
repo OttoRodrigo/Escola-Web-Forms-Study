@@ -35,4 +35,9 @@
             <asp:Button ID="btnExcluir" class="btn btn-danger" runat="server" Text="Excluir" Width="100%" OnClick="btnExcluir_OnClick" />
         </div>
     </div>
+    <div class="row">
+        <div class="col-1">        
+            <asp:Button ID="btnVoltar" class="btn btn-link" runat="server" Text="Voltar" OnClick="btnVoltar_OnClick" />
+        </div>
+    </div>
 </asp:Content>

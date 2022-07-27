@@ -50,5 +50,16 @@ namespace EscolaWebForms.Web
             Server.Transfer("~/EditarAluno.aspx");
         }
 
+        protected void delete_RowDeleting(Object sender, GridViewDeleteEventArgs e)
+        {
+            var gridEdit = gvAlunos.Rows[e.RowIndex].Cells[1];
+            Context.Items.Add("id", gridEdit.Text);
+            Server.Transfer("~/ExcluirAluno.aspx");
+        }      
+
+        protected void btnNovoAluno_onclick(object sender, EventArgs e)
+        {
+            Server.Transfer("~/CriarAluno.aspx");
+        }
     }
 }
