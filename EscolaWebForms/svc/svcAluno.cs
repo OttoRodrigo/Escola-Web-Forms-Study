@@ -15,7 +15,7 @@ namespace EscolaWebForms.svc
 
         public List<aluno> listaAlunos()
         {
-            return _insaluno.ListarDenuncias();
+            return _insaluno.ListarAlunos();
         }
 
         public void addAluno(aluno addAluno)

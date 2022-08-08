@@ -13,33 +13,19 @@ namespace EscolaWebForms.Data
 {
     internal class acessoAluno
     {
-        internal string insConexao()
-        {
-            string connectionString = "Data Source=DESKTOP-BO7IDIK;Initial Catalog=dbEscola;Integrated Security=True";
-                       
-            return connectionString;
-        }
+        conectDataBase _conection = new conectDataBase();       
 
-        internal List<aluno> ListarDenuncias()
+        internal List<aluno> ListarAlunos()
         {            
             List<aluno> retAlunos = new List<aluno>();
-            string connectionString = insConexao();
+            string connectionString = _conection.buscaConexao();
 
             string queryString = RESAluno.listaAlunos;
 
-            // Provide the query string with a parameter placeholder.
-            //string queryString =
-            //    "select * from aluno";
-            //+ "WHERE UnitPrice > @pricePoint "
-            //+ "ORDER BY UnitPrice DESC;";
-
-            // Specify the parameter value.
-            //int paramValue = 5;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {           
                 SqlCommand command = new SqlCommand(queryString, connection);
-                //command.Parameters.AddWithValue("@pricePoint", paramValue);
                 
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
@@ -58,13 +44,11 @@ namespace EscolaWebForms.Data
 
                 return retAlunos;
             }
-
-
         }
 
         internal void inserirAluno(aluno insAluno)
         {
-            string connectionString = insConexao();
+            string connectionString = _conection.buscaConexao(); ;
 
             string queryString = RESAluno.inserirAlunos;          
 
@@ -87,7 +71,7 @@ namespace EscolaWebForms.Data
         internal aluno buscarAluno(long p_cpf)
         {
             aluno retAluno = new aluno();
-            string connectionString = insConexao();
+            string connectionString = _conection.buscaConexao();
 
             string queryString = RESAluno.buscaAluno;            
 
@@ -115,7 +99,7 @@ namespace EscolaWebForms.Data
 
         internal void atualizaAluno(aluno atAluno)
         {
-            string connectionString = insConexao();
+            string connectionString = _conection.buscaConexao();
 
             string queryString = RESAluno.atualizaAluno;
 
@@ -137,7 +121,7 @@ namespace EscolaWebForms.Data
 
         internal void excluirAluno(long excCpf)
         {
-            string connectionString = insConexao();
+            string connectionString = _conection.buscaConexao();
 
             string queryString = RESAluno.deleteAluno;
 

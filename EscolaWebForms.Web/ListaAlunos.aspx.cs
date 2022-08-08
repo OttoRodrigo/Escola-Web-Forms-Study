@@ -10,10 +10,18 @@ namespace EscolaWebForms.Web
 {
     public partial class ListaAlunos : System.Web.UI.Page
     {
+        svcUsuario _insUser = new svcUsuario();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                var valido = _insUser.confirmaUsuario((string)Session["user"], (string)Session["senha"]);
+
+                if (!valido)
+                {
+                    Server.Transfer("~/Login.aspx");
+                }
                 gridAlunos();
             }
 

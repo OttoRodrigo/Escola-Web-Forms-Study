@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EscolaWebForms.mdl
+namespace EscolaWebForms.mdl.gv
 {
-     public class notas
+    public class gvRegistroNotas
     {
         public int id { get; set; }
-        public int aluno { get; set; }
-        public int disciplina { get; set; }
+        public long aluno { get; set; }
+        public string nomeAluno { get; set; }
+        public string nomeDisciplina { get; set; }
         public float nota1 { get; set; }
         public float nota2 { get; set; }
         public float nota3 { get; set; }

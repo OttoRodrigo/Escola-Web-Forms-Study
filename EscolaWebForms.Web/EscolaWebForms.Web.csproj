@@ -83,13 +83,21 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="CriarNotas.aspx" />
+    <Content Include="CriarDisciplina.aspx" />
+    <Content Include="EditarNotas.aspx" />
+    <Content Include="EditarDisciplina.aspx" />
     <Content Include="EditarAluno.aspx" />
+    <Content Include="ExcluirDisciplina.aspx" />
     <Content Include="ExcluirAluno.aspx" />
     <Content Include="CriarAluno.aspx" />
     <Content Include="CSS\IndexCSS.css" />
     <Content Include="Index.aspx" />
+    <Content Include="ListaNotas.aspx" />
+    <Content Include="ListaDisciplinas.aspx" />
     <Content Include="ListaAlunos.aspx" />
     <Content Include="Comum\comumJs.js" />
+    <Content Include="Login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -108,12 +116,47 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CriarNotas.aspx.cs">
+      <DependentUpon>CriarNotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CriarNotas.aspx.designer.cs">
+      <DependentUpon>CriarNotas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CriarDisciplina.aspx.cs">
+      <DependentUpon>CriarDisciplina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CriarDisciplina.aspx.designer.cs">
+      <DependentUpon>CriarDisciplina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarNotas.aspx.cs">
+      <DependentUpon>EditarNotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarNotas.aspx.designer.cs">
+      <DependentUpon>EditarNotas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditarDisciplina.aspx.cs">
+      <DependentUpon>EditarDisciplina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarDisciplina.aspx.designer.cs">
+      <DependentUpon>EditarDisciplina.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditarAluno.aspx.cs">
       <DependentUpon>EditarAluno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EditarAluno.aspx.designer.cs">
       <DependentUpon>EditarAluno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirDisciplina.aspx.cs">
+      <DependentUpon>ExcluirDisciplina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExcluirDisciplina.aspx.designer.cs">
+      <DependentUpon>ExcluirDisciplina.aspx</DependentUpon>
     </Compile>
     <Compile Include="ExcluirAluno.aspx.cs">
       <DependentUpon>ExcluirAluno.aspx</DependentUpon>
@@ -143,6 +186,20 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ListaNotas.aspx.cs">
+      <DependentUpon>ListaNotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaNotas.aspx.designer.cs">
+      <DependentUpon>ListaNotas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDisciplinas.aspx.cs">
+      <DependentUpon>ListaDisciplinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListaDisciplinas.aspx.designer.cs">
+      <DependentUpon>ListaDisciplinas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ListaAlunos.aspx.cs">
       <DependentUpon>ListaAlunos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,6 +208,13 @@
       <DependentUpon>ListaAlunos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Comum\comumClass.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

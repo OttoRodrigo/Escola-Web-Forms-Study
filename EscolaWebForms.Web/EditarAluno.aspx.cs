@@ -14,14 +14,22 @@ namespace EscolaWebForms.Web
     {
         private svcAluno _insAluno = new svcAluno();
         comumClass _comum = new comumClass();
+        svcUsuario _insUser = new svcUsuario();
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                var valido = _insUser.confirmaUsuario((string)Session["user"], (string)Session["senha"]);
+
+                if (!valido)
+                {
+                    Server.Transfer("~/Login.aspx");
+                }
                 var id = Context.Items["id"].ToString();
                 buscaAluno(Convert.ToInt64(id));
             }
+
         }
 
         protected void buscaAluno(long cpf)

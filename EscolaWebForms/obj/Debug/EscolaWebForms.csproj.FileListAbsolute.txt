@@ -12,3 +12,6 @@ C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\bin\Debug\EntityFramew
 C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.csproj.CopyComplete
 C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.Data.RESAluno.resources
 C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.csproj.GenerateResource.cache
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.Data.RESDisciplina.resources
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.Data.RESRegistroNotas.resources
+C:\Users\Otto_\source\repos\EscolaWebForms\EscolaWebForms\obj\Debug\EscolaWebForms.Data.RESUsuario.resources

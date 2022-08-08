@@ -50,17 +50,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\acessoUsuario.cs" />
+    <Compile Include="Data\acessoRegistroNotas .cs" />
     <Compile Include="Data\acessoAluno.cs" />
+    <Compile Include="Data\acessoDisciplina.cs" />
+    <Compile Include="Data\conectDataBase.cs" />
+    <Compile Include="Data\RESUsuario.Designer.cs">
+      <DependentUpon>RESUsuario.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Data\RESAluno.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RESAluno.resx</DependentUpon>
     </Compile>
+    <Compile Include="Data\RESRegistroNotas.Designer.cs">
+      <DependentUpon>RESRegistroNotas.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\RESDisciplina.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RESDisciplina.resx</DependentUpon>
+    </Compile>
     <Compile Include="mdl\aluno.cs" />
     <Compile Include="mdl\disciplina.cs" />
-    <Compile Include="mdl\notas.cs" />
+    <Compile Include="mdl\gv\gvRegistroNotas.cs" />
+    <Compile Include="mdl\registroNotas .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="svc\svcRegistroNotas .cs" />
     <Compile Include="svc\svcAluno.cs" />
+    <Compile Include="svc\svcDisciplina.cs" />
+    <Compile Include="svc\svcUsuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -70,9 +93,21 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Data\RESUsuario.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RESUsuario.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Data\RESAluno.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RESAluno.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\RESRegistroNotas.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RESRegistroNotas.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\RESDisciplina.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RESDisciplina.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

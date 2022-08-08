@@ -14,10 +14,19 @@ namespace EscolaWebForms.Web
     public partial class CriarAluno : System.Web.UI.Page
     {
         comumClass _comum = new comumClass();
+        svcUsuario _insUser = new svcUsuario();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!IsPostBack)
+            {
+                var valido = _insUser.confirmaUsuario((string)Session["user"], (string)Session["senha"]);
+
+                if (!valido)
+                {
+                    Server.Transfer("~/Login.aspx");
+                }                
+            }
 
         }       
 
